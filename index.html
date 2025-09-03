@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>FusionLine — Υπό κατασκευή</title>
+  <meta name="description" content="FusionLine — Υπηρεσίες οπτικών ινών. Η ιστοσελίδα μας είναι υπό κατασκευή.">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root { --bg:#0b1220; --bg2:#0f172a; --text:#e5e7eb; --muted:#94a3b8; --accent:#f59e0b; --accent2:#fbbf24; }
+    *{box-sizing:border-box} html, body{height:100%}
+    body{ margin:0; color:var(--text);
+      background: radial-gradient(1200px 600px at 50% -220px, #141c2f, var(--bg2));
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      letter-spacing:.1px; }
+    .wrap{min-height:100%; display:flex; align-items:center; justify-content:center; padding:24px}
+    .card{ width:100%; max-width:840px; position:relative; padding:36px 28px 26px;
+      border-radius:22px; background:rgba(13,18,32,.6);
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow: 0 20px 50px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.04);
+      text-align:center; overflow:hidden; }
+    .halo{ position:absolute; inset:-1px; border-radius:24px; padding:1px;
+      background:linear-gradient(120deg, rgba(245,158,11,.8), rgba(251,191,36,.0) 40%, rgba(245,158,11,.6) 70%, rgba(251,191,36,.0));
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude; pointer-events:none; }
+    .brand{font-weight:600; color:var(--muted); letter-spacing:.6px; font-size:18px; display:flex; align-items:center; justify-content:center; gap:10px}
+    .dot{width:8px; height:8px; border-radius:999px; background:linear-gradient(180deg,var(--accent),var(--accent2)); box-shadow:0 0 16px rgba(245,158,11,.55);}
+    .title{font-size: clamp(30px, 5vw, 46px); margin:12px 0 10px; font-weight:800; line-height:1.12}
+    .subtitle{color:var(--muted); font-size: clamp(15px, 2.6vw, 18px); margin:0 0 18px}
+    .img{display:block; margin:0 auto 18px; width:min(640px, 95%); height:auto; border-radius:12px; border:1px solid rgba(255,255,255,.06)}
+    .bar{height:10px; width:min(420px,90%); margin:10px auto 0; border-radius:20px; position:relative; overflow:hidden; border:1px solid rgba(255,255,255,.08)}
+    .bar::before{ content:""; position:absolute; inset:0; 
+      background: repeating-linear-gradient(135deg, var(--accent) 0 18px, #111827 18px 36px);
+      animation: slide 2.4s linear infinite; opacity:.9; }
+    @keyframes slide{ 0%{transform: translateX(0)} 100%{transform: translateX(-36px)} }
+    .cta{display:inline-block; margin-top:16px; padding:11px 18px; border-radius:999px; border:1px solid rgba(255,255,255,.14); text-decoration:none; color:var(--text)}
+    .cta:hover{border-color: rgba(255,255,255,.34)}
+    .founders{margin-top:14px; color:var(--muted); font-size:14px}
+    footer{margin-top:18px; font-size:12px; color:var(--muted)}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" role="status" aria-live="polite">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="brand"><span class="dot" aria-hidden="true"></span>FusionLine</div>
+      <h1 class="title">Υπό κατασκευή</h1>
+      <p class="subtitle">Η ιστοσελίδα μας ετοιμάζεται. Επιστρέψτε σύντομα.</p>
+      <img class="img" src="/assets/under-construction.svg" alt="Γραφικό υπό κατασκευή">
+      <div class="bar" aria-hidden="true"></div>
+      <a class="cta" href="mailto:info@fusionline.gr" aria-label="Επικοινωνία μέσω email">Επικοινωνία: info@fusionline.gr</a>
+      <div class="founders">Founders: <strong>Gerald</strong> &amp; <strong>Daniel</strong></div>
+      <footer>© 2025 FusionLine</footer>
+    </section>
+  </main>
+</body>
+</html>
